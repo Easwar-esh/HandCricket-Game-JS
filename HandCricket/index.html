@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandCricket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <div class="wrappermob">
+            <img src="images/sorry.jpg" alt="Image not found">
+            <h1 style="margin-top: 20px;">Sorry this website only on desktop version</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <h1 style="margin-top: 20px;text-align: center;font-size: 3rem;">Hand Cricket</h1>
+            <div style="padding: 5px;"></div>
+            <div class="group">
+                <div class="left">
+                    <select class="team">
+                        <option class="csk">CSK</option>
+                        <option class="mi">MI</option>
+                        <option class="kkr">KKR</option>
+                        <option class="rcb">RCB</option>
+                        <option class="rr">RR</option>
+                        <option class="srh">SRH</option>
+                        <option class="dc">DC</option>
+                        <option class="pkb">PKB</option>
+                    </select>
+                    <button type="button" id="tick">&#x2713</button>
+                    <div>
+                        <h1>Your Team:<span id="change">CSK</span></h1>
+                    </div>
+                    <div class="my">
+                        <h1 class="myteam">CSK:</h1>
+                        <span class="score">0</span>/<span id="wicket">0</span>
+                        <span class="choose">()</span>
+                    </div>
+                </div>
+                <div style="padding: 10px;"></div>
+                <div class="right">
+                    <select class="team-opp">
+                        <option class="kkr">KKR</option>
+                        <option class="csk">CSK</option>
+                        <option class="mi">MI</option>
+                        <option class="rcb">RCB</option>
+                        <option class="rr">RR</option>
+                        <option class="srh">SRH</option>
+                        <option class="dc">DC</option>
+                        <option class="pkb">PKB</option>
+                    </select>
+                    <button type="button" id="tick-opp">&#x2713</button>
+                    <div>
+                        <h1>Opponent Team:<span id="change-opp">KKR</span></h1>
+                    </div>
+                    <div class="opp">
+                        <h1 class="oppteam">KKR:</h1>
+                        <span class="scoreopp">0</span>/<span id="wicketopp">0</span>
+                        <span class="chooseopp">()</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="ta">
+                    <h2>Target:</h2>
+                    <h2 class="target">1st Innings</h2>
+                </div>
+                <div class="info">
+                    <h1 class="me">-</h1>
+                    <h1>:VS:</h1>
+                    <h1 class="com">-</h1>
+                </div>
+                <div class="set">
+                    <h1 class="minus"></h1>
+                </div>
+            </div>
+            <div style="padding: 20px;"></div>
+            <div class="controller">
+                <button type="button" id="one">1</button>
+                <button type="button" id="two">2</button>
+                <button type="button" id="three">3</button>
+                <button type="button" id="four">4</button>
+                <button type="button" id="six">6</button>
+            </div>
+        </div>
+        <div class="wrapper-two">
+            <div class="instruction">
+                <div class="ins">
+                    <h1 class="myt">&#x2713 Select Your Team</h1>
+                    <h1 class="opt">&#x2713 Select Opponent Team</h1>
+                    <h1 style="text-decoration: underline;font-size: 40px;">Note:Only 2 wickets</h1>
+                </div>
+            </div>
+            <div class="toss">
+                <h1>Choose Toss:</h1>
+                <div class="choosetoss">
+                    <button id="head">Head</button>
+                    <button id="tail">Tail</button>
+                </div>
+            </div>
+            <div class="choice" style="margin:40%">
+                <h1>Choose to:</h1>
+                <div class="chooseto">
+                    <button id="bat">Batting</button>
+                    <button id="bowl">Bowling</button>
+                </div>
+            </div>
+            <div class="show">
+                <h1 class="detail"></h1>
+            </div>
+            <div class="video-container">
+                <video autoplay loop muted id="videoPlayer">
+                    <source src="" type="video/mp4">
+                   Your browser does not support the video tag.
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="below">
+                <h1 class="print">!</h1>
+            </div> 
+            <div class="restart">
+                <img class="imag" src="" alt="Image not found">
+                <button class="go">Restart</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
